@@ -50,9 +50,11 @@ const Navbar = () => {
           {/* Logo and Name */}
           <div className="flex items-center">
             <Link href="/" className=" space-x-2 group">
-              <h1 className="font-bold text-xl flex flex-col sm:text-xl lg:text-2xl bg-gradient-to-r from-cyan-400 to-cyan-900  bg-clip-text text-transparent">
-                Help Desk
-                <span className=" text-xs">By Ashfak</span>
+              <h1 className="">
+                <span className="font-bold text-[20px] flex flex-col sm:text-[20px] lg:text-[24px] bg-gradient-to-r from-cyan-400 to-cyan-900  bg-clip-text text-transparent">
+                  Help Desk
+                </span>
+                <span className=" text-[12px]">By Ashfak</span>
               </h1>
             </Link>
           </div>
@@ -76,8 +78,8 @@ const Navbar = () => {
             {true ? (
               <div className=" flex items-center gap-5 ">
                 {/* Avatar */}
-                <BellIcon className=" h-6 w-6 cursor-pointer"/>
-                <Bookmark className=" h-6 w-6 cursor-pointer"/>
+                <BellIcon className=" h-6 w-6 cursor-pointer" />
+                <Bookmark className=" h-6 w-6 cursor-pointer" />
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   className="w-9 h-9 rounded-full overflow-hidden border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400"
