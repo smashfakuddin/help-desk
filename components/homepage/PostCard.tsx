@@ -41,8 +41,10 @@ export default function PostCard() {
           <span className=" text-gray-500 font-semibold">5 Comments</span>
         </div>
         <div className="flex items-center gap-3">
-            <button className="btn-secondary">Android app</button>
-            <button className="btn-secondary flex items-center gap-1"><LayoutGrid className=" h-4 w-4 text-pink-400"/> Android app</button>
+          <button className="btn-secondary">Android app</button>
+          <button className="btn-secondary flex items-center gap-1">
+            <LayoutGrid className=" h-4 w-4 text-pink-400" /> Android app
+          </button>
         </div>
       </div>
     </div>
