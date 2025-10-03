@@ -1,18 +1,10 @@
-"use client";
+
 import { LayoutGrid, MessageCircle, TimerIcon, User } from "lucide-react";
-import { useState } from "react";
-import Modal from "../common/Modal";
-import PostDetail from "./PostDetail";
+
 import Link from "next/link";
 
 export default function PostCard() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const handleOpenModal = () => {
-    setModalOpen(true);
-  };
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
+
   return (
     <>
       <Link href={"/post/1234"}>
@@ -66,13 +58,13 @@ export default function PostCard() {
           </div>
         </div>
       </Link>
-      <Modal
+      {/* <Modal
         isOpen={modalOpen}
         onClose={handleCloseModal}
         className="max-w-7xl w-full"
       >
         <PostDetail />
-      </Modal>
+      </Modal> */}
     </>
   );
 }

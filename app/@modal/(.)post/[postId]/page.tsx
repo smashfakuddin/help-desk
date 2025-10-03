@@ -1,11 +1,9 @@
-"use client";
-import Modal from "@/components/common/Modal";
+
+import ModalPage from "./ModalPage";
 
 export default function page() {
-    
+
   return (
-    <Modal isOpen={true} onClose={() => {}}>
-      <div>modal page</div>
-    </Modal>
+    <ModalPage/>
   );
 }

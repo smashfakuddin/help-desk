@@ -1,5 +1,9 @@
+import PostDetail from "@/components/details/PostDetail";
+
 export default function page() {
   return (
-    <div>main page</div>
-  )
+    <div className=" container py-5">
+      <PostDetail />
+    </div>
+  );
 }
