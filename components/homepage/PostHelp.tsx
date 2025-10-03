@@ -16,9 +16,7 @@ export default function PostHelp() {
   };
 
   const handleSubmit = async (data: FormData) => {
-    console.log(data.get("title"));
-    console.log(data.get("postType"));
-    console.log(data.get("content"));
+   
     handleCloseModal();
   };
   return (
